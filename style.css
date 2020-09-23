@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  list-style: none;
+  color: #fff;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 1.5rem;
+}
+.item:hover {
+  color: #f3da74;
+}
+.profile {
+  font-family: "Actor", sans-serif;
+  color: #fff;
+  height: 400px;
+  width: 90%;
+  margin: -15px auto;
+  background-image: url("img/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.container {
+  margin: 5% auto;
+  width: 50%;
+  position: relative;
+}
+.main-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 50%;
+  text-align: center;
+}
+.name {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.buttons {
+  position: absolute;
+  left: 33%;
+}
+.btn {
+  background-color: #74f3a1;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #74f3a1;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #74f3a1;
+  border: 1px solid #74f3a1;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: #fff;
+  border-radius: 50%;
+  background-color: #37b3e6;
+  margin-right: 3rem;
+}
+.info {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  font-family: "Cormorant Garamond", serif;
+  border: 1px solid #999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.description {
+  padding: 1rem;
+}
+.info-table {
+  padding: 1rem;
+  display: inline-block;
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody {
+  border-top: 35px solid transparent;
+}
+td,
+th {
+  padding: 2px 18px;
+}
+@media only screen and (max-width: 1200px) {
+  name {
+    font-size: 0.7rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .buttons {
+    left: 26%;
+  }
+  .info {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .buttons {
+    left: 21%;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 65%;
+  }
+  .buttons {
+    left: 13%;
+    width: 100%;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+  .info {
+    width: 95%;
+    font-size: 0.7rem;
+  }
+  .icons {
+    width: 64%;
+    margin-right: 2rem;
+  }
+}
